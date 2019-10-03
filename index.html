@@ -6,32 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- CSS/Javascript links -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <script src="assets/javascript/app.js"></script>
-
-    <!-- bootstrap/jquery -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <title>Trivia Game</title>
+
+    <!-- bootstrap/jquery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
 
 </head>
 
 <body>
-
-    <h1>Trivia Game</h1>
-
-    <div class="container">
-
-
+    <div class="jumbotron">
+        <div id="box1">
+            <h1 class="display-4 text-center" style="font-family: 'Share Tech', sans-serif">Welcome
+                to Game Trivia</h1>
+            <p class="directions">You have 10 seconds to answer each question.</p>
+            <p class="directions">Unanswered questions will count as wrong answers.</p>
+            <div id="timer" style="justify-content: right"></div>
+            <p class="lead">Question:</p>
+            <div id="question-asked"></div>
+        </div>
+        <div class="text-center">
+            <button id="start" type="button" class="btn btn-success">Start Game</button>
+            <button id="new" type="button" class="btn btn-success">New Game</button>
+        </div>
+        <hr class="my-4">
+        <div id="ans"></div>
+        <div class="text-center">
+            <button id="cancel" type="button" class="btn btn-danger">Exit Game</button>
+        </div>
+        ​
     </div>
-
-
 </body>
 
 </html>

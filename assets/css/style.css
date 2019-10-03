@@ -1,3 +1,15 @@
 body {
     background-image: url("../../assets/images/wallpaper.png");
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    background-color: cadetblue;
+    width: 400px;
+    height: 650px;
+    margin-top: 25px;
 }
